@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Assignment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Task Assignment Form</h1>
+        <p>Please complete the form below to assign a new task.</p>
+    </header>
+    <main>
+        <form action="https://formspree.io/YOUR_FORMSPREE_ENDPOINT" method="POST" id="taskAssignmentForm">
+            <div class="form-group">
+                <label for="employeeFirstName">Employee First Name:</label>
+                <input type="text" id="employeeFirstName" name="employeeFirstName" required>
+                
+                <label for="employeeLastName">Employee Last Name:</label>
+                <input type="text" id="employeeLastName" name="employeeLastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="managerFirstName">Manager First Name:</label>
+                <input type="text" id="managerFirstName" name="managerFirstName" required>
+                
+                <label for="managerLastName">Manager Last Name:</label>
+                <input type="text" id="managerLastName" name="managerLastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="task">Task:</label>
+                <input type="text" id="task" name="task" required>
+
+                <label for="taskId">Task ID (Job Number):</label>
+                <input type="text" id="taskId" name="taskId" required>
+            </div>
+
+            <fieldset class="form-group">
+                <legend>Status of the Job:</legend>
+                <label><input type="radio" name="status" value="Not Started" required> Not Started</label>
+                <label><input type="radio" name="status" value="In Progress"> In Progress</label>
+                <label><input type="radio" name="status" value="Done"> Done</label>
+                <label><input type="radio" name="status" value="Awaiting Feedback"> Awaiting Feedback</label>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="additionalNotes">Additional Notes:</label>
+                <textarea id="additionalNotes" name="additionalNotes" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" name="instructions" rows="3"></textarea>
+            </div>
+
+            <button type="submit">Submit Task Assignment</button>
+        </form>
+    </main>
+</body>
+</html>
