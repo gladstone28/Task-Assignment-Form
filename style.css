@@ -15,10 +15,11 @@ form {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.form-group, fieldset {
+.form-group,
+fieldset {
     margin-bottom: 20px;
 }
 
@@ -63,4 +64,11 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+input[type="file"] {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-top: 5px;
 }
